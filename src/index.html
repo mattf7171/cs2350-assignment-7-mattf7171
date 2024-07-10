@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="index,follow" />
+    <meta name="description" content="TODO: A starter project for ..." />
+
+    <link rel="stylesheet" href="./stylesheets/main.css" />
+    <title>Interactive Smiley Face</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+        canvas {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Interactive Smiley Face</h1>
+    <canvas id="myCanvas" width="400" height="400"></canvas>
+    <br>
+    <label for="size">Choose a size:</label>
+    <input type="number" id="size" name="size" value="50" min="10" max="200">
+    <label for="color">Choose a color:</label>
+    <input type="color" id="color" name="color" value="#FFFF00">
+    <button id="drawButton">Update Smiley Face</button>
+    <script src="javascripts/main.js"></script>
+</body>
+</html>
